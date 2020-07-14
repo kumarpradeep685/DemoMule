@@ -24,6 +24,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="hello-worldFlow">
+		<http:listener doc:name="Listener" doc:id="42943b34-a1d9-4a2e-a89a-fcfacea8e2a3" config-ref="HTTP_Listener_config" path="\test"/>
 		<flow-ref name="hello-worldSub_Flow" doc:name="Hello World sub-flow"/>
     </flow>
     <sub-flow name="hello-worldSub_Flow">
