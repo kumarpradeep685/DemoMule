@@ -36,7 +36,7 @@
             <plugin>
             <groupId>org.mule.tools.maven</groupId>
             <artifactId>mule-maven-plugin</artifactId>
-            <version>${mule.maven.plugin.version}</version>
+            <version>3.3.5</version>
             <configuration>
 		        <cloudHubDeployment>
 		            <uri>https://anypoint.mulesoft.com</uri>
