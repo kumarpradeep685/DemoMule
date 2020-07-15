@@ -19,36 +19,6 @@
 	</properties>
 
 
-        <profile>
-            <id>cloudhub</id>
-                <build>
-                    <plugins>
-                    <plugin>
-                        <groupId>org.mule.tools.maven</groupId>
-                        <artifactId>mule-maven-plugin</artifactId>
-                        <configuration>
-                                    <deploymentType>cloudhub</deploymentType>
-                                    <uri>https://anypoint.mulesoft.com</uri>
-                                    <muleVersion>${mule.version}</muleVersion>
-                                    <username>${anypoint.username}</username>
-                                    <password>${anypoint.password}</password>
-                                    <applicationName>test3</applicationName>
-                                    <environment>${anypoint.environment}</environment>
-                        </configuration>
-                        <executions>
-                        <execution>
-                            <id>deploy</id>
-                            <phase>deploy</phase>
-                            <goals>
-                            <goal>deploy</goal>
-                            </goals>
-                        </execution>
-                        </executions>
-                    </plugin>
-                    </plugins>
-                </build>
-            </profile>
-
 	<build>
 		    <plugins>
         	<plugin>
@@ -153,6 +123,34 @@
         </pluginRepository>
     </pluginRepositories>
 
-
-
 </project>
+
+      <profile>
+            <id>cloudhub</id>
+                <build>
+                    <plugins>
+                    <plugin>
+                        <groupId>org.mule.tools.maven</groupId>
+                        <artifactId>mule-maven-plugin</artifactId>
+                        <configuration>
+                                    <deploymentType>cloudhub</deploymentType>
+                                    <uri>https://anypoint.mulesoft.com</uri>
+                                    <muleVersion>${mule.version}</muleVersion>
+                                    <username>${anypoint.username}</username>
+                                    <password>${anypoint.password}</password>
+                                    <applicationName>test3</applicationName>
+                                    <environment>${anypoint.environment}</environment>
+                        </configuration>
+                        <executions>
+                        <execution>
+                            <id>deploy</id>
+                            <phase>deploy</phase>
+                            <goals>
+                            <goal>deploy</goal>
+                            </goals>
+                        </execution>
+                        </executions>
+                    </plugin>
+                    </plugins>
+                </build>
+            </profile>
