@@ -93,7 +93,6 @@
         </dependency>
 	</dependencies>
 <distributionManagement>
-	
         <repository>
             <id>mulesoft-releases</id>
             <name>MuleSoft Releases Repository</name>
@@ -103,6 +102,14 @@
    
     </distributionManagement>
 
+    <repositories>
+          <repository>
+            <id>anypoint-exchange-v2</id>
+            <name>Anypoint Exchange</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
     
     <pluginRepositories>
         <pluginRepository>
