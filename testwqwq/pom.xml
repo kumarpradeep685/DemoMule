@@ -104,7 +104,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-<!—distributionManagement tags are related to Nexus OSS3.X set up-- >
+<!--distributionManagement tags are related to Nexus OSS3.X set up-- >
 <distributionManagement>
 	    <repository>
 	      <id>nexus</id>
