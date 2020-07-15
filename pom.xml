@@ -87,7 +87,7 @@
 		            <muleVersion>${mule.version}</muleVersion>
 		            <username>pramodkumarv61</username>
 		            <password>Qwerty123@</password>
-		            <applicationName>mulesoft-jenkins-ci-cd</applicationName>
+		            <applicationName>test3</applicationName>
 		            <environment>Sandbox</environment>
 		            <properties>
 		                <key>value</key>
