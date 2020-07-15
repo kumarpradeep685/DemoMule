@@ -19,7 +19,15 @@
 	</properties>
 
 	<build>
-		<plugins>
+		    <plugins>
+        	<plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.6</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+	        </plugin>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-site-plugin</artifactId>
@@ -43,13 +51,13 @@
             <artifactId>mule-maven-plugin</artifactId>
             <version>2.3.2</version>
             <configuration>
-		        <cloudHubDeployment>
+		       <cloudHubDeployment>
 		            <uri>https://anypoint.mulesoft.com</uri>
 		            <muleVersion>${mule.version}</muleVersion>
-		            <username>pramodkumarv61</username>
-		            <password>Qwerty123@</password>
+		            <username>${anypoint.username}</username>
+		            <password>${anypoint.password}</password>
 		            <applicationName>test3</applicationName>
-		            <environment>Sandbox</environment>
+		            <environment>${anypoint.environment}</environment>
 		            <properties>
 		                <key>value</key>
 		            </properties>
